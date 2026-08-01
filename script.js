@@ -45,7 +45,7 @@
 
     museum: {
       title: "Welcome to the extremely prestigious Museum of Us.",
-      sub: "Please don't touch anything.",
+      sub: "Check the exhibit one by one.",
       cta: "CONTINUE THE TOUR →",
       back: "BACK TO THE HALLWAY",
       exhibits: [
