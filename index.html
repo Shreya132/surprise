@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Museum of Us — A Little Friendship Day Website</title>
+    <meta
+      name="description"
+      content="An interactive, fully editable friendship-day website: unopened message, knock-knock door, Museum of Us, do-not-press button, memory cleanup, handwritten letter, word search and a friendship renewal agreement."
+    />
+    <meta property="og:title" content="Museum of Us — A Little Friendship Day Website" />
+    <meta
+      property="og:description"
+      content="Knock on the door, tour the Museum of Us, press the button you were told not to press, and read the letter at the end."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Courier+Prime:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- loader -->
+    <div class="loader" id="loader" aria-hidden="true">
+      <div class="loader__heart">♥</div>
+      <p>opening a small place on the internet…</p>
+    </div>
+
+    <!-- floating hearts / sparkles -->
+    <canvas class="fx" id="fx" aria-hidden="true"></canvas>
+
+    <!-- the phone-like page -->
+    <div class="shell" id="shell">
+      <div class="paper" id="paper">
+        <div class="tape tape--tl" aria-hidden="true"></div>
+        <div class="tape tape--tr" aria-hidden="true"></div>
+
+        <header class="chrome">
+          <button class="chip" id="btnBack" aria-label="Previous scene">‹</button>
+          <div class="dots" id="dots" aria-label="Progress"></div>
+          <button class="chip" id="btnSettings" aria-label="Open settings">⚙</button>
+        </header>
+
+        <main class="stage" id="stage" aria-live="polite"></main>
+      </div>
+      <p class="credit" id="credit"></p>
+    </div>
+
+    <!-- settings panel -->
+    <aside class="panel" id="panel" aria-label="Settings">
+      <div class="panel__head">
+        <h2>Settings</h2>
+        <button class="chip" id="panelClose" aria-label="Close settings">✕</button>
+      </div>
+      <div class="panel__tabs" id="panelTabs" role="tablist"></div>
+      <div class="panel__body" id="panelBody"></div>
+      <div class="panel__foot">
+        <button class="btn btn--sm" id="exportCfg">Export .json</button>
+        <label class="btn btn--sm btn--ghost">
+          Import
+          <input type="file" id="importCfg" accept="application/json" hidden />
+        </label>
+        <button class="btn btn--sm btn--danger" id="resetCfg">Reset all</button>
+      </div>
+    </aside>
+    <div class="scrim" id="scrim"></div>
+
+    <div class="toast" id="toast" role="status"></div>
+    <audio id="audio" loop preload="none"></audio>
+    <button class="music-btn" id="musicBtn" aria-label="Toggle music" title="Music">♪</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
