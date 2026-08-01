@@ -45,7 +45,7 @@
 
     museum: {
       title: "Welcome to the extremely prestigious Museum of Us.",
-      sub: "Check the exhibit one by one.",
+      sub: "Please don't touch anything.",
       cta: "CONTINUE THE TOUR →",
       back: "BACK TO THE HALLWAY",
       exhibits: [
@@ -61,11 +61,11 @@
         {
           label: "Exhibit B",
           glyph: "🗄",
-          kind: "plaque",
+          kind: "curtain",
           title: "Certified Weirdness",
           text: "V started our chat in insta on Oct13 v started sharing relatable reels it took time till nov25 to change the content to bf u reacted a reel with 1st time dec24",
           caption: "Exhibit kept behind a curtain for public safety.",
-          img: "memory-1 (2).jpeg",
+          img: "assets/image.jpeg",
         },
         {
           label: "Exhibit C",
@@ -107,9 +107,9 @@
       done: "You kept all of them. Of course you did.",
       next: "OKAY, ENOUGH →",
       memories: [
-        { img: "memory-1.jpeg", caption: "Being there when life gets a little too real.", tag: "01" },
-        { img: "memory-2.jpeg", caption: "Eating something questionable at 1am.", tag: "02" },
-        { img: "memory-3.jpeg", caption: "That sunset nobody could photograph properly.", tag: "03" },
+        { img: "assets/memory-1.jpg", caption: "Being there when life gets a little too real.", tag: "01" },
+        { img: "assets/memory-2.jpg", caption: "Eating something questionable at 1am.", tag: "02" },
+        { img: "assets/memory-3.jpg", caption: "That sunset nobody could photograph properly.", tag: "03" },
       ],
     },
 
@@ -130,8 +130,8 @@
         "Some stay for a conversation.",
         "Some stay for a chapter.",
         "And somehow, a very small number become part of the story itself.",
-        "==I have heard that if u find a good female friend 90% of ur life is sorted . I never believed in that until I meet u . I never thought we'll be this close enough to fear loosing eachother. Sometimes ur too good to be true where I doubt myself that how did u become my friend out of all my idiotic behaviour. Yes we fight yes sometimes we get angry to each other but at the end we are together and we should and we will .==",
-        "~~Thankyou for being such a beautiful soul in my life maybe my better half happy friendship day~~",
+        "==You're one of those people for me.==",
+        "~~Thank you for being exactly the kind of weird that matches mine.~~",
         "I don't know what life will look like years from now.",
         "But I'm really glad there was a version of my life where our paths crossed.",
         "And I hope there are many more versions after this one.",
